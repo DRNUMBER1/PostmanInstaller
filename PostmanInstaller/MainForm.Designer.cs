@@ -50,6 +50,7 @@ namespace PostmanInstaller
             this.label1 = new System.Windows.Forms.Label();
             this.dir = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +61,7 @@ namespace PostmanInstaller
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Location = new System.Drawing.Point(67, 248);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(242, 23);
+            this.button1.Size = new System.Drawing.Size(239, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Download Postman";
             this.button1.UseVisualStyleBackColor = false;
@@ -80,7 +81,7 @@ namespace PostmanInstaller
             // linkLabel1
             // 
             this.linkLabel1.BackColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(12, 357);
+            this.linkLabel1.Location = new System.Drawing.Point(12, 378);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(68, 16);
             this.linkLabel1.TabIndex = 2;
@@ -103,7 +104,7 @@ namespace PostmanInstaller
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(67, 219);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(242, 23);
+            this.button2.Size = new System.Drawing.Size(239, 23);
             this.button2.TabIndex = 7;
             this.button2.Text = "Change installtion Dir";
             this.button2.UseVisualStyleBackColor = false;
@@ -126,7 +127,7 @@ namespace PostmanInstaller
             this.panel2.Controls.Add(this.StatusLable);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.progressBar1);
-            this.panel2.Location = new System.Drawing.Point(69, 277);
+            this.panel2.Location = new System.Drawing.Point(69, 307);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(240, 63);
             this.panel2.TabIndex = 10;
@@ -181,7 +182,7 @@ namespace PostmanInstaller
             // linkLabel2
             // 
             this.linkLabel2.BackColor = System.Drawing.Color.White;
-            this.linkLabel2.Location = new System.Drawing.Point(340, 357);
+            this.linkLabel2.Location = new System.Drawing.Point(340, 378);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(41, 16);
             this.linkLabel2.TabIndex = 12;
@@ -189,12 +190,24 @@ namespace PostmanInstaller
             this.linkLabel2.Text = "Github";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(67, 277);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(239, 23);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Options";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(393, 382);
+            this.ClientSize = new System.Drawing.Size(393, 403);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.dir);
             this.Controls.Add(this.linkLabel1);
@@ -232,5 +245,6 @@ namespace PostmanInstaller
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label dir;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -128,5 +128,11 @@ namespace PostmanInstaller
         {
             System.Diagnostics.Process.Start("https://github.com/srgantmoomoo/postman");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+			Options o = new Options(path);
+			o.ShowDialog();
+        }
     }
 }
